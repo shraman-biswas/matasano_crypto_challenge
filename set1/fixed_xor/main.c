@@ -31,7 +31,7 @@ int main(void)
 	printf("\n");
 
 	/* applying fixed xor */
-	fixed_xor(hex1, hex2, res, len);
+	fixed_xor(hex1, hex2, res);
 
 	/* display result */
 	printf("result:\n");
