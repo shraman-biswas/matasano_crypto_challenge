@@ -3,8 +3,12 @@
 
 #include <ctype.h>
 
-/* hex to decimal converter */
-#define H2D(x) ((x <= '9') ? x - '0' : tolower(x) - 'a' + 10)
+/* ascii to decimal conversion macro */
+#define A2D(x) (((x) <= '9') ? (x) - '0' : tolower(x) - 'a' + 10)
+
+/* decimal to ascii conversion macro */
+#define D2A(x) (((x) <= 9) ? (x) + '0' : (x) + 'a' - 10)
+
 
 /* base64 look up table */
 static const char base64_lut[64] = {
@@ -16,5 +20,6 @@ static const char base64_lut[64] = {
 
 void str_to_hex(const char *const s1, char *s2);
 void hex_to_base64(const char *const s1, char *s2);
+void hex_to_str(const char *s1, char *s2);
 
 #endif

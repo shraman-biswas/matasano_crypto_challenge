@@ -10,5 +10,6 @@ void fixed_xor(
 	int i=0;
 	for (i=0; i<len; ++i)
 		res[i] = hex1[i] ^ hex2[i];
+	res[i] = 0;
 }
 
