@@ -19,7 +19,7 @@ static const char base64_lut[64] = {
 };
 
 void str_to_hex(const char *s, char *h);
-void hex_to_base64(const char *h1, char *h2);
 void hex_to_str(const char *h, char *s);
+void hex_to_base64(const char *h1, char *h2);
 
 #endif
