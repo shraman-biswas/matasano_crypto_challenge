@@ -1,8 +1,5 @@
 #include "main.h"
 
-/* function prototypes */
-static void disp_hex(const char *const hex, const int len);
-
 int main(void)
 {
 	printf("[ fixed xor ]\n\n");
@@ -23,20 +20,8 @@ int main(void)
 	str_to_hex(str1, hex1);
 	str_to_hex(str2, hex2);
 
-	/* display array of hex bytes */
-	printf("hex 1:\n");
-	disp_hex(hex1, len);
-	printf("hex 2:\n");
-	disp_hex(hex2, len);
-	printf("\n");
-
 	/* applying fixed xor */
 	fixed_xor(hex1, hex2, res);
-
-	/* display result */
-	printf("result:\n");
-	disp_hex(res, len);
-	printf("\n");
 
 	/* display result */
 	printf("result:\n%s\n\n", res);
@@ -44,12 +29,4 @@ int main(void)
 	printf("hex string:\n%s\n\n", str);
 
 	return EXIT_FAILURE;
-}
-
-static void disp_hex(const char *const hex, const int len)
-{
-	int i;
-	for (i=0; i<len-1; ++i)
-		printf("%02x, ", hex[i]);
-	printf("%02x\n", hex[i]);
 }
