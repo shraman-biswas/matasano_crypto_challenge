@@ -14,7 +14,7 @@ static const char base64_lut[64] = {
 	'+', '/'
 };
 
-void str_to_hex(const char *s1, char *s2);
-void hex_to_base64(const char *s1, char *s2);
+void str_to_hex(const char *const s1, char *s2);
+void hex_to_base64(const char *const s1, char *s2);
 
 #endif

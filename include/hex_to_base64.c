@@ -1,7 +1,7 @@
 #include "hex_to_base64.h"
 
 /* convert hex encoded string to array of hex bytes */
-void str_to_hex(const char *s1, char *s2)
+void str_to_hex(const char *const s1, char *s2)
 {
 	const char *p=s1;
 	for (;*p; p+=2)
@@ -10,7 +10,7 @@ void str_to_hex(const char *s1, char *s2)
 }
 
 /* convert array of hex bytes to base64 representation */
-void hex_to_base64(const char *s1, char *s2)
+void hex_to_base64(const char *const s1, char *s2)
 {
 	const char *p=s1;
 	while (*p != 0) {
