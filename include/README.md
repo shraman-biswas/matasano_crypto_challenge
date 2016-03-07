@@ -15,4 +15,4 @@ hex_to_base64(): convert an array of hex bytes to a base64 encoded string.
 
 * fixed_xor:  
 &nbsp;&nbsp;
-fixed_xor(): xor two equal-length array of hex bytes.
+fixed_xor(): XOR two equal-length array of hex bytes.
