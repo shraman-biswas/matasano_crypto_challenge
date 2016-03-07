@@ -1,8 +1,8 @@
 #include "fixed_xor.h"
 
-void fixed_xor(const char *s1, const char *s2, char *s3)
+void fixed_xor(const char *h1, const char *h2, char *h3)
 {
-	while (*s3++ = *s1++ ^ *s2++);
-	*s3 = 0;
+	while (*h3++ = *h1++ ^ *h2++);
+	*h3 = 0;
 }
 
