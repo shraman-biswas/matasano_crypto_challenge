@@ -1,31 +1,31 @@
 #include "hex_to_base64.h"
 
 /* convert hex encoded string to array of hex bytes */
-void str_to_hex(const char *s1, char *s2)
+void str_to_hex(const char *s, char *h)
 {
-	for (; *s1; s1+=2)
-		*s2++ = (A2D(*s1) << 4) | A2D(*(s1+1));
-	*s2 = 0;
+	for (; *s; s+=2)
+		*h++ = (A2D(*s) << 4) | A2D(*(s+1));
+	*h = 0;
 }
 
 /* convert array of hex bytes to base64 representation */
-void hex_to_base64(const char *s1, char *s2)
+void hex_to_base64(const char *h1, char *h2)
 {
-	while (*s1) {
-		*s2++ = base64_lut[ *s1 >> 2 ];
-		*s2++ = base64_lut[ ((*s1++ << 4) & 0x3f) | (*s1 >> 4) ];
-		*s2++ = base64_lut[ ((*s1++ << 2) & 0x3f) | (*s1 >> 6) ];
-		*s2++ = base64_lut[ *s1++ & 0x3f ];
+	while (*h1) {
+		*h2++ = base64_lut[ *h1 >> 2 ];
+		*h2++ = base64_lut[ ((*h1++ << 4) & 0x3f) | (*h1 >> 4) ];
+		*h2++ = base64_lut[ ((*h1++ << 2) & 0x3f) | (*h1 >> 6) ];
+		*h2++ = base64_lut[ *h1++ & 0x3f ];
 	}
-	*s2 = 0;
+	*h2 = 0;
 }
 
-void hex_to_str(const char *s1, char *s2)
+void hex_to_str(const char *h, char *s)
 {
-	while (*s1) {
-		*s2++ = D2A(*s1 >> 4);
-		*s2++ = D2A(*s1 & 0xf);
-		s1++;
+	while (*h) {
+		*s++ = D2A(*h >> 4);
+		*s++ = D2A(*h & 0xf);
+		h++;
 	}
-	*s2 = 0;
+	*s = 0;
 }
