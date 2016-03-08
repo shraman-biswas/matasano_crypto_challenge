@@ -18,8 +18,9 @@ static const double lhist_lut[26] = {
 	.00074,					/* z     */
 };
 
-char decrypt_sbyte_xor(const char *const b1, char *const b2);
-bool calc_lhist(const char *b, double *const h);
+double decrypt_sbyte_xor(const char *const b1, char *const b2, char *const key);
 double cmp_lhist(const double *const h);
+bool calc_lhist(const char *b, double *const h);
+
 
 #endif
