@@ -8,6 +8,9 @@
 
 #include "xor.h"
 
+#define LOWER 32
+#define UPPER 127
+
 /* normalized letter frequency histogram look-up table */
 static const double lhist_lut[26] = {
 	.08167,	.01492,	.02782,	.04253,	.12702,	/* a - e */

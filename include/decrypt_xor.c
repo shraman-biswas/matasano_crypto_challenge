@@ -6,7 +6,7 @@ double decrypt_sbyte_xor(const char *const b1, char *const b2, char *const key)
 	char tmp[strlen(b1)];
 	int c;
 	double err, min=DBL_MAX, lhist[26];
-	for (c=0; c<128; ++c) {
+	for (c=LOWER; c<UPPER; ++c) {
 		sbyte_xor(b1, c, tmp);		/* XOR bytes with key */
 		if (!calc_lhist(tmp, lhist))	/* skip if non-printable */
 			continue;
