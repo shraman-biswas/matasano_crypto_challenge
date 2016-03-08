@@ -4,18 +4,19 @@ int main(void)
 {
 	printf("[ hex to base64 encoding ]\n\n");
 
-	char hex[strlen(str)], res[strlen(str)];
+	const int len = strlen(str) / 2;
+	char bytes[len], res[4 / 3 * len];
 
-	/* display string */
-	printf("string:\n%s\n\n", str);
+	/* display hex encoded string */
+	printf("hex encoded string:\n%s\n\n", str);
 
-	/* display string in hex encoding */
-	str_to_hex(str, hex);
-	printf("hex:\n%s\n\n", hex);
+	/* hex encoded string to bytes encoding */
+	str_to_bytes(str, bytes);
+	printf("bytes:\n%s\n\n", bytes);
 
-	/* display string in base64 encoding */
-	hex_to_base64(hex, res);
-	printf("base64:\n%s\n\n", res);
+	/* bytes to base64 encoding */
+	base64(bytes, res);
+	printf("base64 encoded:\n%s\n\n", res);
 
 	return EXIT_SUCCESS;
 }
