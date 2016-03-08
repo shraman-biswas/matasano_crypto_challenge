@@ -9,5 +9,5 @@ void base64(const char *b1, char *b2)
 		*b2++ = base64_lut[ ((*b1++ << 2) & 0x3f) | (*b1 >> 6) ];
 		*b2++ = base64_lut[ *b1++ & 0x3f ];
 	}
-	*h2 = 0;
+	*b2 = 0;
 }

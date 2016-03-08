@@ -3,7 +3,7 @@
 /* convert hex encoded string to bytes */
 void str_to_bytes(const char *s, char *b)
 {
-	for (; *s; s+=2 )
+	for (; *s; s+=2)
 		*b++ = (A2D(*s) << 4) | A2D(*(s+1));
 	*b = 0;
 }
