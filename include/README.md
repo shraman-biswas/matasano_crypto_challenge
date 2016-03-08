@@ -9,7 +9,7 @@ Features:
 &nbsp;&nbsp;
 str_to_bytes(): convert a hex encoded string to bytes.  
 &nbsp;&nbsp;
-hex_to_str(): convert bytes to a hex encoded string  
+bytes_to_str(): convert bytes to a hex encoded string  
 
 * base64:  
 &nbsp;&nbsp;
