@@ -1,17 +1,17 @@
 #include "xor.h"
 
-/* XOR two equal-length array of hex bytes */
-void fixed_xor(const char *h1, const char *h2, char *h3)
+/* XOR two equal-length bytes arrays */
+void fixed_xor(const char *b1, const char *b2, char *b3)
 {
-	while (*h1 && *h2)
-		*h3++ = *h1++ ^ *h2++;
-	*h3 = 0;
+	while (*b1 && *b2)
+		*b3++ = *b1++ ^ *b2++;
+	*b3 = 0;
 }
 
-/* XOR array of hex bytes with single byte */
-void sbyte_xor(const char *h1, const char c, char *h2)
+/* XOR bytes array with single byte */
+void sbyte_xor(const char *b1, const char c, char *b2)
 {
-	while (*h1 && c)
-		*h2++ = *h1++ ^ c;
-	*h2 = 0;
+	while (*b1 && c)
+		*b2++ = *b1++ ^ c;
+	*b2 = 0;
 }
