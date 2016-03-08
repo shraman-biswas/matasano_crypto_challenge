@@ -19,9 +19,9 @@ bytes_to_str(): convert bytes to a hex encoded string
 &nbsp;&nbsp;
 decrypt_sbyte_xor(): decrypt a single-byte XOR cipher  
 &nbsp;&nbsp;
-calc_letter_hist(): calculate the normalized letter frequency histogram of bytes  
+calc_lhist(): calculate the normalized letter frequency histogram of bytes  
 &nbsp;&nbsp;
-cmp_letter_hist(): compare letter frequency histograms  
+cmp_lhist(): compare letter frequency histograms  
 
 * xor:  
 &nbsp;&nbsp;
