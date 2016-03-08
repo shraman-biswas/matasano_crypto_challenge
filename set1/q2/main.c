@@ -2,7 +2,7 @@
 
 int main(void)
 {
-	printf("[ fixed xor ]\n\n");
+	printf("[ fixed XOR ]\n\n");
 
 	const int len = strlen(str1) / 2;
 	char hex1[len], hex2[len], res[len], str[2 * len];
