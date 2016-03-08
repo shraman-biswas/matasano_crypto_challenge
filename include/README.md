@@ -5,15 +5,15 @@ Some common files and functions used in the solutions.
 
 Features:
 
+* base64:  
+&nbsp;&nbsp;
+base64(): convert bytes to a base64 representation  
+
 * bytes:  
 &nbsp;&nbsp;
 str_to_bytes(): convert a hex encoded string to bytes.  
 &nbsp;&nbsp;
 bytes_to_str(): convert bytes to a hex encoded string  
-
-* base64:  
-&nbsp;&nbsp;
-base64(): convert bytes to a base64 representation  
 
 * xor:  
 &nbsp;&nbsp;
