@@ -1,4 +1,4 @@
-#include "main.h"	
+#include "main.h"
 
 int main(void)
 {
@@ -16,7 +16,7 @@ int main(void)
 
 	/* decryption */
 	key = decrypt_sbyte_xor(len, bytes, dec);
-	printf("key: %c\ndecrypted string:\n%s\n\n", key, dec);
+	printf("encryption key: %c\ndecrypted string:\n%s\n\n", key, dec);
 
-	return EXIT_FAILURE;
+	return EXIT_SUCESS;
 }
