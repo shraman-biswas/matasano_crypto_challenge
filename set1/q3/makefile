@@ -1,7 +1,7 @@
 CXX	=	gcc
 INC	=	../../include
 FLAGS	=	-Wall -O3 -ggdb -I$(INC)
-SOURCE	=	main.c $(INC)/bytes.c $(INC)/xor.c $(INC)/decrypt_xor.c
+SOURCE	=	main.c $(INC)/bytes.c $(INC)/decrypt_xor.c $(INC)/xor.c
 BIN	=	main
 
 all:
