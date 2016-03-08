@@ -15,7 +15,7 @@ int main(void)
 	printf("encrypted bytes:\n%s\n\n", bytes);
 
 	/* decryption */
-	key = decrypt_sbyte_xor(len, bytes, dec);
+	key = decrypt_sbyte_xor(bytes, dec);
 	printf("encryption key: %c\ndecrypted string:\n%s\n\n", key, dec);
 
 	return EXIT_SUCCESS;
