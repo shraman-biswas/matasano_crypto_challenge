@@ -1,5 +1,5 @@
-Set1: Basics
-============
+Set 1: Basics
+=============
 
 Solutions to the Matasano Crypto Challenges, Set 1: Basics.  
 Link: http://cryptopals.com/sets/1/
