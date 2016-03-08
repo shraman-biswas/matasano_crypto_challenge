@@ -11,7 +11,7 @@ void fixed_xor(const char *b1, const char *b2, char *b3)
 /* XOR bytes array with single byte */
 void sbyte_xor(const char *b1, const char c, char *b2)
 {
-	while (*b1 || c)
+	while (*b1)
 		*b2++ = *b1++ ^ c;
 	*b2 = 0;
 }
