@@ -33,7 +33,7 @@ bool calc_letter_hist(
 	for (i=0; i<26; ++i)
 		h[i] = 0;
 	for (i=0; i<len; ++i) {
-		if ((b[i] < 32) || (b[i] > 127))
+		if (!isprint(b[i]))
 			return false;
 		if (isalpha(b[i]))
 			h[tolower(b[i]) - 'a']++;
